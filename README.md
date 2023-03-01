@@ -13,3 +13,11 @@ In this project, I seek to show my front-end skills using the React library and 
 #### npm install 
 
 #### npm start
+
+## Or
+
+#### yarn
+
+#### yarn add
+
+#### yarn start
