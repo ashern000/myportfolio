@@ -10,14 +10,14 @@ In this project, I seek to show my front-end skills using the React library and 
 
 ## How to Run
 
-#### npm install 
+#### $ npm install 
 
-#### npm start
+#### $ npm start
 
 ## Or
 
-#### yarn
+#### $ yarn
 
-#### yarn add
+#### $ yarn add
 
-#### yarn start
+#### $ yarn start
