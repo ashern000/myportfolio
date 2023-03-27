@@ -1,9 +1,10 @@
-import {FooterStyled} from "./styles"
+import { FooterStyled } from "./styles"
 
-export default function Footer(){
-    return(
+export default function Footer() {
+    return (
         <FooterStyled>
-            oi
+            <p>Developed by Asher</p>
+            <p>Using React, Styled Components</p>
         </FooterStyled>
     )
 }

@@ -21,21 +21,22 @@ import { useState } from "react";
 import react from "../../assets/React.png";
 import linux from "../../assets/Linux.png";
 import node from "../../assets/node.png";
-import { FiInstagram, FiLinkedin, FiPhone, FiZap } from "react-icons/fi";
+import { FiInstagram, FiLinkedin } from "react-icons/fi";
+import {FaWhatsapp} from "react-icons/fa"
 import asher from "../../assets/asher.jpg";
 
-let contador = 0;
+let counter = 0;
 
 export default function Home() {
   const [pic, setPic] = useState(require("../../assets/ubuntu.png"));
 
   function setPicF() {
-    contador++;
-    if (contador === 1) {
+    counter++;
+    if (counter === 1) {
       setPic(require("../../assets/Lubuntu.png"));
     }
-    if (contador === 2) {
-      contador = 0;
+    if (counter === 2) {
+      counter = 0;
       setPic(require("../../assets/ubuntu.png"));
     }
   }
@@ -54,7 +55,7 @@ export default function Home() {
       </FirstSection>
 
       <SecondarySection>
-        <h1>Tecnologias que uso!</h1>
+        <h1>Technologies I use!</h1>
         <DivTech>
           <ItensTech>
             <ImgStyled
@@ -115,7 +116,10 @@ export default function Home() {
         <div></div>
 
         <TextAboutMe>
-          <p>So um jovem programador apaixonado pela área. , entrei para esse mundo bem novo, com apenas 12 anos, realizando manutenção em componentes de Hardware. Com o passar do tempo, acabei criando uma paixão por programação Web, desde a prototipação de Layouts até a criação de sistemas back-end e configurações de servidores. </p>
+          <p>I'm a young programmer passionate about the area, I entered this world very young, with only 12 years old, performing maintenance on Hardware components. Over time, I ended up developing a passion for web programming, from prototyping layouts to creating back-end systems and server configurations.
+ </p>
+ <p>I currently have the ability to create interfaces with ReactJs, using the backend with nodeJs, starting from NextJs to Express.
+About operating systems, I use the Ubuntu distro on a daily basis; I created automation scripts for tasks I needed, such as updating the list of repositories and programs installed on the machine (using systemd).</p>
         </TextAboutMe>
 
         <ImgAsher src={asher} />
@@ -126,14 +130,17 @@ export default function Home() {
       <FiveSection id="contacts">
       
         <ContactsDiv>
+        <a href="https://www.linkedin.com/in/asher-novelli-310475244/" target="_blank">LinkedIn</a >
           <FiLinkedin size={95} color="#0c0"/>
         </ContactsDiv>
         
         <ContactsDiv>
-        <FiPhone size={95} color="#0c0"/>
+        <a href="#" target="_blank">WhatsApp</a >
+        <FaWhatsapp size={95} color="#0c0"/>
         </ContactsDiv>
 
         <ContactsDiv>
+          <a href="https://www.instagram.com/ares_asher/" target="_blank">Instagram</a >
           <FiInstagram size={95} color="#0c0"/>
         </ContactsDiv>
       

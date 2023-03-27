@@ -32,6 +32,10 @@ export const FirstSection = styled.section`
     height: 50%;
     width: 1px;
   }
+
+  @media(min-width: 1024px) and (max-width: 1200px){
+    justify-content: center;
+  }
 `;
 
 export const AboutMe = styled.article`
@@ -46,6 +50,7 @@ export const AboutMe = styled.article`
 
   h1{
     font-size: 4rem;
+    font-weight:700;
     letter-spacing: -0.5px;
     word-spacing: -0.5px;
   }
@@ -55,6 +60,7 @@ export const AboutMe = styled.article`
     word-spacing: -1px;
     letter-spacing: 0.2px;
     font-style: italic;
+    font-weight: 400;
   }
   
 `;
@@ -127,6 +133,10 @@ export const SecondarySection = styled.section`
     color: white;
     position: relative;
     top: 110px;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
   }
 `;
 
@@ -149,7 +159,9 @@ export const ItensTech = styled.div`
   align-items: center;
   text-align: center;
   z-index: 2;
+  font-weight: 300;
   color: white;
+  font-size: 1.02rem;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -173,7 +185,7 @@ export const ItensTech = styled.div`
 export const ImgStyled = styled.img`
   width: 200px;
   height: 200px;
-  animation: ${props => props.animationType} ${props=> props.durationAnimation ? props.durationAnimation : "7.7s"} ease-in-out infinite;
+  animation: ${props => props.animationType} ${props => props.durationAnimation ? props.durationAnimation : "7.7s"} ease-in-out infinite;
   transition: 0.5s all;
 
   @keyframes rotateImage {
@@ -268,6 +280,10 @@ export const ProjectsDiv = styled.div`
   justify-content: space-around;
   align-items: center;
   color: white;
+  
+  ul{
+    list-style: none;
+  }
 `;
 export const TextProject = styled.div`
   height: 100%;
@@ -323,14 +339,32 @@ background-attachment: fixed;
 `
 
 export const TextAboutMe = styled.div`
-width: 40%;
+width: 42.5%;
 z-index: 3;
+gap: 10.5px;
+word-spacing: -1px;
+letter-spacing: 1px;
 height: 100%;
 display: flex;
 align-items: center;
+justify-content: center;
+text-indent: 7.5%;
 color: #FFF;
-font-size: 1.5rem;
+flex-direction: column;
+font-style: italic;
+font-weight: 300;
+font-size: 1.3rem;
 text-align: justify;
+
+@media(min-width: 1024px) and (max-width:1200px){
+  font-size: 1.1rem;  
+  width: 50%;
+}
+
+@media(min-width:1201px) and (max-width:1300px){
+  width: 50%;
+  font-size:1.075rem ;
+}
 `
 
 
@@ -369,12 +403,44 @@ display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 100%;
-/* From https://css.glass */
 background: rgba(0, 0, 0, 0.59);
 border-radius: 10rem;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(16.1px);
 -webkit-backdrop-filter: blur(16.1px);
 border:1px solid rgba(0, 255, 0, 0.18);
+transition: 0.25s all;
 
+a{
+  display: none;
+  opacity: 0;
+  font-weight: 300;
+  font-size: 1.75rem;
+}
+:hover{
+  background: rgba(10, 10, 10, 0.75);
+  border:1px solid rgba(0, 0, 0, 0.85);
+
+a{
+  text-decoration: none;
+  display: inline;
+  opacity: 1;
+  transition: 0.45s;
+  color: #0F0;
+}
+
+a:hover{
+  transform: scale(1.05,1.05);
+}
+  svg{
+    transition: 0.45s;
+    display: none;
+  }
+
+  @media(min-width: 1024px) and (max-width: 1200px){
+  background-color: blue;
+  
+  }
+ 
+}
 `

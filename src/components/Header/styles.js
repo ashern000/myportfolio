@@ -24,8 +24,8 @@ export const DivStyled = styled.div`
     1.25s 1 alternate ease-in-out;
   color: #0f0;
   align-items: center;
-  
   z-index: 4;
+  font-weight: 100;
   margin-top: 6px;
 
   @keyframes esmaecer {
@@ -49,6 +49,7 @@ export const DivStyled = styled.div`
     border-radius: 10px;
     border: 0;
     font-size: 1rem;
+    font-weight: 300;
     transition: 0.7s;
   }
 
@@ -85,6 +86,7 @@ margin-top: 4px;
   color: #0f0;
   display: flex;
   list-style: none;
+  font-weight: 400;
   justify-content: space-around;
   align-items: center;
 
